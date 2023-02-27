@@ -138,7 +138,7 @@ Aqui acaba el articulos recomendados
 */
 
 
-<<<<<<< HEAD
+
 .imagenes_ventas_populares {
     height: 40rem;
     display: flex;
@@ -168,7 +168,7 @@ Aqui acaba el articulos recomendados
 #foto_abajo{
     padding-top: 2rem;
 
-=======
+}
 /*
 NUESTRA HISTORIA
 */
@@ -185,7 +185,7 @@ NUESTRA HISTORIA
     padding-top: 5rem;
     height: 20rem;
     width: 100%;
->>>>>>> 67a776c1cb2737ba873fd3c131499ca5a690d08e
+
 }
 
 
@@ -206,8 +206,10 @@ footer{
 }
 
 .footer_inferior{
+
+}
     
-=======
+/*
 AYUDA
 */
 
@@ -217,5 +219,88 @@ AYUDA
 
 .parrafoAyuda{
     text-align: justify;
->>>>>>> 67a776c1cb2737ba873fd3c131499ca5a690d08e
+
+}
+
+
+/* estilo a los textos de ventas populares y articulos recomendados*/
+.articulos, .ventas_populares{ 
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imagenes_articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    height: 20rem;
+    width: 100%;
+}
+
+.imagenes_articulos img{
+    height: fit-content;
+    width: fit-content;
+    padding: 3rem;
+}
+
+/*
+Aqui acaba el articulos recomendados
+*/
+
+
+.imagenes_ventas_populares {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.imagenes_ventas_populares img{
+    height: 30rem;
+    width: 20rem;
+    padding: 0rem 1rem 0rem 1rem;
+    
+}
+
+.fotos_ventas_populares {
+    display: flex;
+    flex-direction: column;
+    object-fit: fill;
+}
+
+.fotos_ventas_populares img{
+    height: 14rem;
+    
+    
+}
+
+#foto_abajo{
+    padding-top: 2rem;
+
+}
+
+
+/*
+Aqui acaba el main del index
+*/
+
+/*
+Comienza el footer
+*/
+
+footer{
+    height: 10rem;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_inferior{
+    
 }
