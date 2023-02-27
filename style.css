@@ -3,9 +3,6 @@ body{
     overflow-x: hidden;
 }
 
-/*
-Aqui Acaba el header
-*/
 
 .header{
     height: 20rem;
@@ -32,11 +29,50 @@ Aqui Acaba el header
     color: white;
 }
 
+.menu_registro{
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 5rem 0rem 0rem;
+    
+}
+
+.menu_registro a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+
+
+/*
+Esto es solo para visualizar
+*/
+.menu_registro a:hover{
+    background-color: red;
+
+}
+
+
 .menu{
-    height: fit-content;
+    height: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+#barra_busqueda{
+    padding-top: 5rem;
+}
+
+#busqueda{
+    height: 2rem;
+    border-radius: 2rem;
+    width: 20rem;
+    padding-left: 1rem;
+    border-radius: solid;
 }
 
 .menu img{
@@ -51,7 +87,7 @@ Aqui Acaba el header
 
 .menu ul{
     float: right;
-    padding-right: 5rem;
+    padding-right: 2rem;
 }
 
 .menu nav{
@@ -59,10 +95,26 @@ Aqui Acaba el header
     flex-direction: column;
     justify-content: center;
     
+    
 }
 
-.menu li i{
-    padding: 1rem;
+.menu li{
+    padding-right: 3rem;
+    
+    
+}
+
+.menu a{
+    color: black;
+    font-size: xx-large;
+    text-decoration: none;
+    
+}
+
+
+.menu a:hover{
+    cursor: pointer;
+    color: red;
 }
 
 .tipo{
@@ -73,19 +125,25 @@ Aqui Acaba el header
 }
 
 .tipo a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    padding: 1rem 2rem 1rem 2rem;
+    width: 20%;
+    padding: 1rem 3rem 1rem 1rem;
     color: black;
 }
 
 .tipo a:hover{
-    background-color: red;
+    background-color: rgba(128, 128, 128, 0.755);
+    color: white;
+    
 }
 
 
 /*
-Aqui Acaba el header y empieza el main
+Aqui acaba el header y empieza el main del index
 */
+
 
 main{
     padding-top: 5rem;
@@ -108,120 +166,6 @@ Aqui empieza el articulos recomendados
     height: 30rem;
 }
 
-/* estilo a los textos de ventas populares y articulos recomendados*/
-.articulos, .ventas_populares{ 
-    padding-top: 10rem;
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.imagenes_articulos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 5rem;
-    height: 20rem;
-    width: 100%;
-}
-
-.imagenes_articulos img{
-    height: fit-content;
-    width: fit-content;
-    padding: 3rem;
-}
-
-/*
-Aqui acaba el articulos recomendados
-*/
-
-
-
-.imagenes_ventas_populares {
-    height: 40rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 5rem;
-}
-
-.imagenes_ventas_populares img{
-    height: 30rem;
-    width: 20rem;
-    padding: 0rem 1rem 0rem 1rem;
-    
-}
-
-.fotos_ventas_populares {
-    display: flex;
-    flex-direction: column;
-    object-fit: fill;
-}
-
-.fotos_ventas_populares img{
-    height: 14rem; 
-    
-}
-
-#foto_abajo{
-    padding-top: 2rem;
-
-}
-/*
-NUESTRA HISTORIA
-*/
-
-.título{
-    text-align: center;
-}
-
-.nuestra_historia{
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 5rem;
-    height: 20rem;
-    width: 100%;
-
-}
-
-
-/*
-<<<<<<< HEAD
-Aqui acaba el main del index
-*/
-
-/*
-Comienza el footer
-*/
-
-footer{
-    height: 10rem;
-    background-color: red;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footer_inferior{
-
-}
-    
-/*
-AYUDA
-*/
-
-.tituloAyuda{
-    text-align: center;
-}
-
-.parrafoAyuda{
-    text-align: justify;
-
-}
-
 
 /* estilo a los textos de ventas populares y articulos recomendados*/
 .articulos, .ventas_populares{ 
@@ -249,7 +193,7 @@ AYUDA
 }
 
 /*
-Aqui acaba el articulos recomendados
+Aqui acaba el articulos recomendados y comienza ventas populares 
 */
 
 
@@ -286,21 +230,124 @@ Aqui acaba el articulos recomendados
 }
 
 
-/*
-Aqui acaba el main del index
-*/
 
 /*
-Comienza el footer
+Acaba el main del index
 */
+
+
+/*
+Empieza el footer
+*/
+
+
 
 footer{
     height: 10rem;
-    background-color: red;
+    background-color: rgba(128, 128, 128, 0.705);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.footer_inferior{
+#texto{
+    padding-top: 8rem;
+    padding-left: 1rem;
+}
+
+.separador{
+    display: flex;
+    padding: 4rem 4rem 0rem 4rem;
+    font-size: xx-large;
+
+}
+
+.separador i{
+    padding: 0rem 2rem 2rem 0rem;
+
+}
+
+
+
+
+/*
+Termina el footer
+*/
+
+
+/*
+NUESTRA HISTORIA
+*/
+
+.título{
+    text-align: center;
+}
+
+.nuestra_historia{
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    height: 20rem;
+    width: 100%;
+
+}
+
     
+/*
+AYUDA
+*/
+
+.tituloAyuda{
+    text-align: center;
+}
+
+.parrafoAyuda{
+    text-align: justify;
+
+}
+
+
+/*
+Main de la cesta
+*/
+
+.cesta{
+    height: 8rem;
+    background-color: blue;
+    padding-left: 5rem;
+    
+
+    
+}
+
+.cesta a{
+    padding-top: 3rem;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.producto1{
+    display: flex;
+}
+
+
+.producto1 img{
+    object-fit: fill;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    width: 10rem;
+    height: 6rem;
+}
+
+.producto1 h1{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: medium;
+}
+
+.producto1 form{
+    padding-top: 1.5rem;
+    padding-left: 5rem;
+    font-size: medium;
 }
