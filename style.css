@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*
+Aqui Acaba el header
+*/
+
+.header{
+    height: 20rem;
+}
+
+.barra_superior{
+    background-color: rgba(128, 128, 128, 0.705);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.botones{
+    padding: 1rem;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.botones:hover{
+    background-color: rgba(128, 128, 128, 0.755);
+    color: white;
+}
+
+.menu{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu img{
+    justify-content: flex-start;
+}
+
+.menu nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.menu ul{
+    float: right;
+    padding-right: 5rem;
+}
+
+.menu nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.menu li i{
+    padding: 1rem;
+}
+
+.tipo{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.705);
+    height: 3rem;
+}
+
+.tipo a{
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    color: black;
+}
+
+
+/*
+Aqui Acaba el header y empieza el main
+*/
+
+
+.foto_main{
+    background-image: url(./imagenes/tienda.jpeg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*
+Aqui empieza el articulos recomendados
+*/
+
+.panel_articulos{
+    height: 40rem;
+}
+
+.articulos{
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imagenes_articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    height: 20rem;
+    width: 100%;
+}
+
+.imagenes_articulos img{
+    height: fit-content;
+    width: fit-content;
+    padding: 3rem;
+}
+
+/*
+Aqui acaba el articulos recomendados
+*/
