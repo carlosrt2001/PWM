@@ -128,3 +128,35 @@ Aqui empieza el articulos recomendados
 /*
 Aqui acaba el articulos recomendados
 */
+
+
+/*
+NUESTRA HISTORIA
+*/
+
+.título{
+    text-align: center;
+}
+
+.nuestra_historia{
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    height: 20rem;
+    width: 100%;
+}
+
+
+/*
+AYUDA
+*/
+
+.tituloAyuda{
+    text-align: center;
+}
+
+.parrafoAyuda{
+    text-align: justify;
+}
