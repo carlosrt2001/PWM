@@ -138,6 +138,7 @@ Aqui acaba el articulos recomendados
 */
 
 
+<<<<<<< HEAD
 .imagenes_ventas_populares {
     height: 40rem;
     display: flex;
@@ -167,10 +168,29 @@ Aqui acaba el articulos recomendados
 #foto_abajo{
     padding-top: 2rem;
 
+=======
+/*
+NUESTRA HISTORIA
+*/
+
+.título{
+    text-align: center;
+}
+
+.nuestra_historia{
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    height: 20rem;
+    width: 100%;
+>>>>>>> 67a776c1cb2737ba873fd3c131499ca5a690d08e
 }
 
 
 /*
+<<<<<<< HEAD
 Aqui acaba el main del index
 */
 
@@ -187,4 +207,15 @@ footer{
 
 .footer_inferior{
     
+=======
+AYUDA
+*/
+
+.tituloAyuda{
+    text-align: center;
+}
+
+.parrafoAyuda{
+    text-align: justify;
+>>>>>>> 67a776c1cb2737ba873fd3c131499ca5a690d08e
 }
