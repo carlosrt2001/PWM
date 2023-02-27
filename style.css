@@ -78,11 +78,18 @@ Aqui Acaba el header
     color: black;
 }
 
+.tipo a:hover{
+    background-color: red;
+}
+
 
 /*
 Aqui Acaba el header y empieza el main
 */
 
+main{
+    padding-top: 5rem;
+}
 
 .foto_main{
     background-image: url(./imagenes/tienda.jpeg);
@@ -98,10 +105,11 @@ Aqui empieza el articulos recomendados
 */
 
 .panel_articulos{
-    height: 40rem;
+    height: 30rem;
 }
 
-.articulos{
+/* estilo a los textos de ventas populares y articulos recomendados*/
+.articulos, .ventas_populares{ 
     padding-top: 10rem;
     display: flex;
     justify-content: center;
@@ -128,3 +136,55 @@ Aqui empieza el articulos recomendados
 /*
 Aqui acaba el articulos recomendados
 */
+
+
+.imagenes_ventas_populares {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.imagenes_ventas_populares img{
+    height: 30rem;
+    width: 20rem;
+    padding: 0rem 1rem 0rem 1rem;
+    
+}
+
+.fotos_ventas_populares {
+    display: flex;
+    flex-direction: column;
+    object-fit: fill;
+}
+
+.fotos_ventas_populares img{
+    height: 14rem; 
+    
+}
+
+#foto_abajo{
+    padding-top: 2rem;
+
+}
+
+
+/*
+Aqui acaba el main del index
+*/
+
+/*
+Comienza el footer
+*/
+
+footer{
+    height: 10rem;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_inferior{
+    
+}
