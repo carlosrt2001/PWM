@@ -153,10 +153,43 @@ NUESTRA HISTORIA
 AYUDA
 */
 
-.tituloAyuda{
-    text-align: center;
+
+
+/*
+CONTACTO
+*/
+
+.contacto{
+    text-align: center; 
+    position: relative;
+    top: 250px;
+    left: 450px;
 }
 
-.parrafoAyuda{
-    text-align: justify;
+  
+  .mapa {
+    max-width: 50%;
+    position: relative;
+    top: -100px;
+    left: 100px;
+  }
+  
+  .pie {
+    position: relative;
+    text-align: center;
+    top: -110px;
+    right: 230px;
+  }
+
+.horario{
+    text-align: center;
+    position: relative;
+    top: 370px;
+    left: 400px;
+}
+
+.RRSS{
+    text-align: center;
+    position: relative;
+    top: 50px;
 }
