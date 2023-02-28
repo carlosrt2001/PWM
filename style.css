@@ -1,6 +1,8 @@
 body{
     width: 100%;
     overflow-x: hidden;
+    margin: 0px;
+
 }
 
 
@@ -162,14 +164,10 @@ main{
 Aqui empieza el articulos recomendados
 */
 
-.panel_articulos{
-    height: 30rem;
-}
-
 
 /* estilo a los textos de ventas populares y articulos recomendados*/
 .articulos, .ventas_populares{ 
-    padding-top: 10rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     font-size: xx-large;
@@ -181,7 +179,7 @@ Aqui empieza el articulos recomendados
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 5rem;
+    padding-top: 2rem;
     height: 20rem;
     width: 100%;
 }
@@ -192,10 +190,25 @@ Aqui empieza el articulos recomendados
     padding: 3rem;
 }
 
+.seccion_articulos{
+    height: 35rem;
+    margin-top: 5rem;
+    /*
+    hay que modificar el margin top
+    */
+}
+
 /*
 Aqui acaba el articulos recomendados y comienza ventas populares 
 */
 
+.seccion_ventas{
+    background-color: rgba(203, 202, 202, 0.181);
+    margin-bottom: 10rem;
+    /*
+    hay que modificar el margin botton
+    */
+}
 
 .imagenes_ventas_populares {
     height: 40rem;
@@ -220,8 +233,6 @@ Aqui acaba el articulos recomendados y comienza ventas populares
 
 .fotos_ventas_populares img{
     height: 14rem;
-    
-    
 }
 
 #foto_abajo{
@@ -391,42 +402,98 @@ CONTACTO
 Main de la cesta
 */
 
-.cesta{
-    height: 8rem;
-    background-color: blue;
-    padding-left: 5rem;
-    
 
+#encabezado_cesta{
+    padding: 4rem;
+    padding-top: 2rem;
     
 }
+
+.cesta{
+    
+    height: 8rem;
+    padding-left: 2rem;
+    width: 45rem;
+    border: solid;
+    border-style: groove;
+    margin-bottom: 1rem;
+}
+
+
 
 .cesta a{
     padding-top: 3rem;
-    cursor: pointer;
     font-size: xx-large;
 }
 
-.producto1{
+
+.cesta a:hover{
+    cursor: pointer;
+    color: red;
+
+}
+
+.producto{
     display: flex;
 }
 
 
-.producto1 img{
+.producto img{
     object-fit: fill;
     padding-top: 1rem;
-    padding-left: 5rem;
+    padding-left: 3rem;
     width: 10rem;
     height: 6rem;
 }
 
-.producto1 h1{
+.producto h5{
     padding-left: 1rem;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
     font-size: medium;
 }
 
-.producto1 form{
-    padding-top: 1.5rem;
-    padding-left: 5rem;
+.producto form{
+    padding-top: 4rem;
+    padding-left: 2rem;
     font-size: medium;
+}
+
+#header_cesta{
+    justify-content: center;
+    display: flex;
+    font-size: xx-large;
+    padding-bottom: 4rem;
+}
+
+
+.resumen_pago{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    justify-content: center;
+    width: 25rem;
+}
+
+.resumen_pago h4{
+    justify-content: center;
+    display: flex;
+}
+
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5rem;
+    
+}
+
+
+
+
+
+
+#contenedor_articulos{
+    display: flex;
+    flex-direction: column;
 }
