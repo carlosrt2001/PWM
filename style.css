@@ -2,9 +2,13 @@ body{
     width: 100%;
     overflow-x: hidden;
     margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
+/*
+Aqui comienza el estilo del header comun a todos los ficheros
+*/
 
 .header{
     height: 20rem;
@@ -57,6 +61,11 @@ Esto es solo para visualizar
 }
 
 
+/*
+----------------------------Parte del header------------------------------
+Contenedor que va a tener el logo, la barra de busqueda y la de navegacion
+*/
+
 .menu{
     height: 10rem;
     display: flex;
@@ -67,19 +76,29 @@ Esto es solo para visualizar
 
 #barra_busqueda{
     padding-top: 5rem;
+
 }
 
 #busqueda{
     height: 2rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 20rem;
     padding-left: 1rem;
-    border-radius: solid;
+    background-color: rgba(128, 128, 128, 0.705);
+    border: 1px solid black;
+ 
+    
 }
 
 .menu img{
     justify-content: flex-start;
 }
+
+
+/*
+----------------------------Parte del header------------------------------
+Comienzo de la barra de navegacion para poder seleccionar los iconos y entrar a diferentes secciones
+*/
 
 .menu nav ul{
     display: flex;
@@ -119,6 +138,13 @@ Esto es solo para visualizar
     color: red;
 }
 
+
+
+/*
+----------------------------Parte del header------------------------------
+Comienzo del submenu para tener las categorias de hombre y mujer
+*/
+
 .tipo{
     display: flex;
     justify-content: center;
@@ -143,115 +169,9 @@ Esto es solo para visualizar
 
 
 /*
-Aqui acaba el header y empieza el main del index
+-----------------Fin del header comun y comienzo del footer comun----------------
+Acaba el header comun a todos los ficheros y empieza el footer comun
 */
-
-
-main{
-    padding-top: 5rem;
-}
-
-.foto_main{
-    background-image: url(./imagenes/tienda.jpeg);
-    height: 40rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
-/*
-Aqui empieza el articulos recomendados
-*/
-
-
-/* estilo a los textos de ventas populares y articulos recomendados*/
-.articulos, .ventas_populares{ 
-    padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.imagenes_articulos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-    height: 20rem;
-    width: 100%;
-}
-
-.imagenes_articulos img{
-    height: fit-content;
-    width: fit-content;
-    padding: 3rem;
-}
-
-.seccion_articulos{
-    height: 35rem;
-    margin-top: 5rem;
-    /*
-    hay que modificar el margin top
-    */
-}
-
-/*
-Aqui acaba el articulos recomendados y comienza ventas populares 
-*/
-
-.seccion_ventas{
-    background-color: rgba(203, 202, 202, 0.181);
-    margin-bottom: 10rem;
-    /*
-    hay que modificar el margin botton
-    */
-}
-
-.imagenes_ventas_populares {
-    height: 40rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 5rem;
-}
-
-.imagenes_ventas_populares img{
-    height: 30rem;
-    width: 20rem;
-    padding: 0rem 1rem 0rem 1rem;
-    
-}
-
-.fotos_ventas_populares {
-    display: flex;
-    flex-direction: column;
-    object-fit: fill;
-}
-
-.fotos_ventas_populares img{
-    height: 14rem;
-}
-
-#foto_abajo{
-    padding-top: 2rem;
-
-}
-
-
-
-/*
-Acaba el main del index
-*/
-
-
-/*
-Empieza el footer
-*/
-
-
 
 footer{
     height: 10rem;
@@ -277,17 +197,117 @@ footer{
 
 }
 
+/*
+-----------------Fin del footer comun y comienzo del Main del Index----------------
+Acaba la parte comun de todos los ficheros (header y footer) y comienza los main de cada uno de los ficheros
+*/
+
+
+main{
+    padding-top: 5rem;
+}
+
+
+.foto_main{
+    background-image: url(./imagenes/tienda.jpeg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 
 
 /*
-Termina el footer
+------------------Comienzo de articulos recomendados------------------
+Comienza la seccion de articulos recomendados
 */
+
+
+
+.articulos{     /* Clase que da estilo a los titulos de las secciones */
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: italic;
+    
+}
+
+.imagenes_articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    height: 20rem;
+    width: 100%;
+}
+
+.imagenes_articulos img{
+    height: fit-content;
+    width: fit-content;
+    padding: 3rem;
+}
+
+.seccion_articulos{
+    height: 35rem;
+    margin-top: 5rem;   /* hay que modificar el margin top para que no de error al hacerlo responsive */
+}
+
 
 
 /*
-NUESTRA HISTORIA
+----------Finaliza articulos recomendados y empieza Ventas Populares-------------
+Finaliza la seccion de articulos recomendados y empieza ventas populares 
 */
+
+
+
+.seccion_ventas{
+    background-color: rgba(203, 202, 202, 0.181);
+    margin-bottom: 10rem;   /* hay que modificar el margin botton */
+}
+
+.imagenes_ventas_populares {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.imagenes_ventas_populares img{
+    height: 30rem;
+    width: 20rem;
+    padding: 0rem 1rem 0rem 1rem;
+    
+}
+
+.fotos_ventas_populares {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fotos_ventas_populares img{
+    height: 14rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+#foto_abajo{
+    padding-top: 2rem;
+
+}
+
+
+/*
+----------Finaliza el Main del index y comienzo de nuestra historia-------------
+Finaliza el main del index y comienza el Main del Nuestra Historia
+*/
+
+
+
 
 .título{
     text-align: center;
@@ -306,7 +326,8 @@ NUESTRA HISTORIA
 
     
 /*
-AYUDA
+----------Finaliza el Main de nuestra historia y comienzo de ayuda-------------
+Finaliza el main de nuestra historia y comienza el Main de ayuda
 */
 
 .tituloAyuda{
@@ -319,7 +340,8 @@ AYUDA
 }
 
 /*
-CONTACTO
+----------Finaliza el Main de ayuda y comienza el de contacto-------------
+Finaliza el main de ayuda y comienza el Main de contacto
 */
 
 .contacto{
@@ -357,28 +379,36 @@ CONTACTO
     top: 50px;
 }
 
+
 /*
-Main de la cesta
+----------Finaliza el Main de contacto y comeinzo de la cesta-------------
+Finaliza el main de contacto y comienza de la cesta
 */
 
-
-#encabezado_cesta{
+   
+#seccion_cesta{
     padding: 4rem;
     padding-top: 2rem;
-    
 }
+
+#header_cesta{
+    justify-content: center;
+    display: flex;
+    font-size: xx-large;
+    padding-bottom: 4rem;
+}
+
+
+    /* -------------Comienzo de los articulos de la cesta-------------*/
 
 .cesta{
     
     height: 8rem;
     padding-left: 2rem;
     width: 45rem;
-    border: solid;
-    border-style: groove;
+    border: 1px solid black;
     margin-bottom: 1rem;
 }
-
-
 
 .cesta a{
     padding-top: 3rem;
@@ -417,25 +447,26 @@ Main de la cesta
     font-size: medium;
 }
 
-#header_cesta{
-    justify-content: center;
-    display: flex;
-    font-size: xx-large;
-    padding-bottom: 4rem;
-}
+
+    /* -------------Finalizacion de los articulos de la cesta-------------*/
 
 
-.resumen_pago{
+    /* -------------Comienzo del resumen del pago-------------*/
+
+
+#resumen_pago{
     display: flex;
     flex-direction: column;
-    background-color: red;
-    justify-content: center;
+    background-color: rgba(205, 203, 203, 0.543);
     width: 25rem;
+    height: 25rem;
+    align-items: center;
 }
 
-.resumen_pago h4{
-    justify-content: center;
-    display: flex;
+#resumen_pago h4{
+    padding-top: 1rem;
+    font-size: x-large;
+    margin: 10px;
 }
 
 
@@ -443,16 +474,140 @@ Main de la cesta
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 5rem;
-    
+    width: 100%;
 }
-
-
-
-
-
 
 #contenedor_articulos{
     display: flex;
     flex-direction: column;
 }
+
+#cupon{
+    resize: none;   
+}
+
+#boton_validar{
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    border: 1px solid black;
+    background-color: rgb(184, 184, 184);
+}
+
+#validar_cupon{
+    display: flex; 
+    
+}
+
+#subtotal{
+    height: 5rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.auxiliar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+}
+
+.auxiliar h6{
+    font-size: medium;
+    padding: 5px;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+#precio, #envio{
+    padding-left: 1rem;
+}
+
+#total{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+#total h6{
+    font-size: medium;
+    font-weight: lighter;
+    margin: 2px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+#pagar{
+    border: 1px solid black;
+    background-color: rgb(184, 184, 184);
+    height: 2rem;
+    width: 15rem;
+}
+
+
+    /* -------------Finalizacion del resumen del pago-------------*/
+
+
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
+
+
+
+.producto_favorito{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 15rem;
+    justify-content: center;
+    height: 15rem;
+}
+
+.producto_favorito img{
+    height: 11rem;
+    width: 11rem;
+    padding-left: 2rem;
+    object-fit: scale-down;
+    padding-top: 2rem;
+}
+
+.producto_favorito a{
+    justify-content: center;
+    display: flex;
+    font-size: xx-large;
+    color: red;
+}
+
+.margen_izquierda{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+}
+
+.bloques{
+    padding-top: 2rem;
+    display: flex;
+    width: 60rem;
+    justify-content: space-between;
+}
+
+#favoritos_seccion{
+    padding-bottom: 5rem;
+}
+
+#favoritos_seccion h4{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+----------Finaliza el Main de la lista de favoritos y comienza .... -------------
+Finaliza el main de la lista de favoritos y comienza ......
+*/

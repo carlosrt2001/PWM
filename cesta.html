@@ -34,7 +34,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html" class="uil uil-home"></a></li>
-                    <li><a href="index.html"class="uil uil-heart-alt"></a></li>
+                    <li><a href="favoritos.html"class="uil uil-heart-alt"></a></li>
                     <li><a href="cesta.html"class="uil uil-shopping-bag"></a></li>
                     <li><a href="index.html"class="uil uil-user-circle"></a></li>
                 </ul>
@@ -51,12 +51,10 @@
 
     <main>
 
-        <section id="encabezado_cesta">
-            <h1 id="header_cesta">Tu cesta de productos</h1>
-
+        <section id="seccion_cesta">
+            <h4 id="header_cesta">Tu cesta de productos</h4>
             <div id="contenedor">
                 <div id="contenedor_articulos">
-                
                     <div class="cesta">
                         <div class="producto">
                             <a class="uil uil-trash-alt"></a>
@@ -147,9 +145,36 @@
                 </div>
 
                 
-                <div class="resumen_pago">
+                <div id="resumen_pago">
                     <h4>Resumen de pago</h4>
                     <p>¿Tienes un código promocional?</p>
+                    
+                    <div id="validar_cupon">
+                        <textarea id="cupon" name="cupon" id="" cols="20" rows="2"></textarea>
+                        <button id="boton_validar">Validar</button>
+                    </div>
+
+                    <div id="subtotal">
+                        <div class="auxiliar">
+                            <h6>Subtotal:</h6>
+                            <h6>Gastos de envio:</h6>
+                        </div>
+
+                        <div class="auxiliar">
+                            <h6>362,97€</h6>
+                            <h6>0€</h6>
+                        </div>
+                    </div>
+
+                    <div id="total">
+                        <h6>Total de la cesta:</h6>
+                        <h6>362,97€</h6>
+                    </div>
+
+                    <button id="pagar">Comprar cesta</button>
+
+                    
+                    
                 </div>
             </div>
             
