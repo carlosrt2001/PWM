@@ -6,6 +6,7 @@ body{
 
 }
 
+
 /*
 Aqui comienza el estilo del header comun a todos los ficheros
 */
@@ -173,7 +174,7 @@ Comienzo del submenu para tener las categorias de hombre y mujer
 Acaba el header comun a todos los ficheros y empieza el footer comun
 */
 
-footer{
+#footer{
     height: 10rem;
     background-color: rgba(128, 128, 128, 0.705);
     display: flex;
@@ -209,7 +210,7 @@ main{
 
 
 .foto_main{
-    background-image: url(./imagenes/tienda.jpeg);
+    background-image: url(../imagenes/tienda.jpeg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
