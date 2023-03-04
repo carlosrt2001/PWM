@@ -6,7 +6,6 @@ body{
 
 }
 
-
 /*
 Aqui comienza el estilo del header comun a todos los ficheros
 */
@@ -174,7 +173,7 @@ Comienzo del submenu para tener las categorias de hombre y mujer
 Acaba el header comun a todos los ficheros y empieza el footer comun
 */
 
-#footer{
+footer{
     height: 10rem;
     background-color: rgba(128, 128, 128, 0.705);
     display: flex;
@@ -210,7 +209,7 @@ main{
 
 
 .foto_main{
-    background-image: url(../imagenes/tienda.jpeg);
+    background-image: url(./imagenes/tienda.jpeg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -722,71 +721,6 @@ Finaliza el main de la lista de favoritos y comienza el main del producto
     display: flex;
     width: 50rem;
     justify-content: center;
+    background-color: red;
     margin-bottom: 2rem;
-}
-
-
-/*
-----------Finaliza el Main de producto y empieza el main de hombre -------------
-Finaliza el Main de producto y empieza el main de hombre
-*/
-
-#contenedor_general{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    height: fit-content;
-    padding-bottom: 5rem;
-}
-
-#contenedor_filtros{
-    background-color: rgba(128, 128, 128, 0.205);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25rem;
-    height: auto;
-}
-
-#contenedor_filtros hr{
-    padding-top: 2px;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    width: 10rem;
-    background-color: grey;
-}
-
-
-#contenedor_filtros form{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-}
-
-#contenedor_articulos_tienda{
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
-    width: 75rem;
-}
-
-#check{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-#check div{
-    padding-left: 0.2rem;
-}
-
-#header_articulos h5{
-    display: flex;
-    font-size: xx-large;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    margin: 0px;
 }
