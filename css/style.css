@@ -245,7 +245,7 @@ Comienza la seccion de articulos recomendados
 }
 
 .imagenes_articulos img{
-    height: fit-content;
+    height: 10rem;
     width: fit-content;
     padding: 3rem;
 }
@@ -790,3 +790,91 @@ Finaliza el Main de producto y empieza el main de hombre
     padding: 20px;
     margin: 0px;
 }
+
+#conteendor_general_perfil{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#contenedor_perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    font-size: x-large;
+}
+
+
+#contenedor_perfil img{
+    border: 1px solid black;
+    object-fit: fill;
+    border-radius: 10rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+#contenedor_perfil div{
+    padding: 2rem;
+    margin-bottom: 4rem;
+    
+}
+
+#contenedor_boton{
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.205);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 20rem;
+}
+
+#contenedor_boton button{
+    height: 2rem;
+    width: 8rem;
+    margin: 0.5rem 1rem;
+
+}
+
+#contenedor_derecha{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40rem;   
+}
+
+#contenedor_informacion{
+    display: flex;
+    flex-direction: row;
+    height: 15rem;
+    margin-left: 10rem;
+    background-color: rgba(128, 128, 128, 0.205);
+    border: 1px solid black;
+    
+}
+#contenedor_informacion div{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#contenedor_informacion label{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 10rem;
+    font-size: medium;
+    background-color: aliceblue;
+    height: 1rem;
+    margin: 1rem;
+}
+
+#contenedor_interior{
+    padding: 2rem 0rem;
+
+}
+
+
+
+
