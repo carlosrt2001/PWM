@@ -3,9 +3,7 @@ body{
     overflow-x: hidden;
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
-
 
 /*
 Aqui comienza el estilo del header comun a todos los ficheros
@@ -21,7 +19,6 @@ Aqui comienza el estilo del header comun a todos los ficheros
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
 }
 
 .botones{
@@ -40,7 +37,6 @@ Aqui comienza el estilo del header comun a todos los ficheros
     display: flex;
     justify-content: flex-end;
     padding: 3rem 5rem 0rem 0rem;
-    
 }
 
 .menu_registro a{
@@ -48,17 +44,13 @@ Aqui comienza el estilo del header comun a todos los ficheros
     color: black;
     padding: 1rem;
     cursor: pointer;
-
 }
-
-
 
 /*
 Esto es solo para visualizar
 */
 .menu_registro a:hover{
     background-color: red;
-
 }
 
 
@@ -66,6 +58,7 @@ Esto es solo para visualizar
 ----------------------------Parte del header------------------------------
 Contenedor que va a tener el logo, la barra de busqueda y la de navegacion
 */
+
 
 .menu{
     height: 10rem;
@@ -77,7 +70,6 @@ Contenedor que va a tener el logo, la barra de busqueda y la de navegacion
 
 #barra_busqueda{
     padding-top: 5rem;
-
 }
 
 #busqueda{
@@ -86,9 +78,7 @@ Contenedor que va a tener el logo, la barra de busqueda y la de navegacion
     width: 20rem;
     padding-left: 1rem;
     background-color: rgba(128, 128, 128, 0.705);
-    border: 1px solid black;
- 
-    
+    border: 1px solid black; 
 }
 
 .menu img{
@@ -100,6 +90,7 @@ Contenedor que va a tener el logo, la barra de busqueda y la de navegacion
 ----------------------------Parte del header------------------------------
 Comienzo de la barra de navegacion para poder seleccionar los iconos y entrar a diferentes secciones
 */
+
 
 .menu nav ul{
     display: flex;
@@ -116,21 +107,16 @@ Comienzo de la barra de navegacion para poder seleccionar los iconos y entrar a 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
 }
 
 .menu li{
     padding-right: 3rem;
-    
-    
 }
 
 .menu a{
     color: black;
     font-size: xx-large;
     text-decoration: none;
-    
 }
 
 
@@ -140,11 +126,11 @@ Comienzo de la barra de navegacion para poder seleccionar los iconos y entrar a 
 }
 
 
-
 /*
 ----------------------------Parte del header------------------------------
 Comienzo del submenu para tener las categorias de hombre y mujer
 */
+
 
 .tipo{
     display: flex;
@@ -165,7 +151,6 @@ Comienzo del submenu para tener las categorias de hombre y mujer
 .tipo a:hover{
     background-color: rgba(128, 128, 128, 0.755);
     color: white;
-    
 }
 
 
@@ -173,6 +158,7 @@ Comienzo del submenu para tener las categorias de hombre y mujer
 -----------------Fin del header comun y comienzo del footer comun----------------
 Acaba el header comun a todos los ficheros y empieza el footer comun
 */
+
 
 #footer{
     height: 10rem;
@@ -190,13 +176,12 @@ Acaba el header comun a todos los ficheros y empieza el footer comun
     display: flex;
     padding: 4rem 4rem 0rem 4rem;
     font-size: xx-large;
-
 }
 
 .separador i{
     padding: 0rem 2rem 2rem 0rem;
-
 }
+
 
 /*
 -----------------Fin del footer comun y comienzo del Main del Index----------------
@@ -218,12 +203,10 @@ main{
 }
 
 
-
 /*
 ------------------Comienzo de articulos recomendados------------------
 Comienza la seccion de articulos recomendados
 */
-
 
 
 .articulos{     /* Clase que da estilo a los titulos de las secciones */
@@ -232,7 +215,6 @@ Comienza la seccion de articulos recomendados
     justify-content: center;
     font-size: xx-large;
     font-style: italic;
-    
 }
 
 .imagenes_articulos{
@@ -255,13 +237,10 @@ Comienza la seccion de articulos recomendados
     margin-top: 5rem;   /* hay que modificar el margin top para que no de error al hacerlo responsive */
 }
 
-
-
 /*
 ----------Finaliza articulos recomendados y empieza Ventas Populares-------------
 Finaliza la seccion de articulos recomendados y empieza ventas populares 
 */
-
 
 
 .seccion_ventas{
@@ -281,13 +260,11 @@ Finaliza la seccion de articulos recomendados y empieza ventas populares
     height: 30rem;
     width: 20rem;
     padding: 0rem 1rem 0rem 1rem;
-    
 }
 
 .fotos_ventas_populares {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .fotos_ventas_populares img{
@@ -298,7 +275,6 @@ Finaliza la seccion de articulos recomendados y empieza ventas populares
 
 #foto_abajo{
     padding-top: 2rem;
-
 }
 
 
@@ -306,6 +282,7 @@ Finaliza la seccion de articulos recomendados y empieza ventas populares
 ----------Finaliza el Main del index y comienzo de sobre nosotros-------------
 Finaliza el main del index y comienza el Main del sobre nosotros
 */
+
 
 .nuestra_contenedor{
     display: flex;
@@ -337,19 +314,21 @@ Finaliza el main del index y comienza el Main del sobre nosotros
 Finaliza el main de nuestra historia y comienza el Main de ayuda
 */
 
+
 .tituloAyuda{
     text-align: center;
 }
 
 .parrafoAyuda{
     text-align: justify;
-
 }
+
 
 /*
 ----------Finaliza el Main de ayuda y comienza el de contacto-------------
 Finaliza el main de ayuda y comienza el Main de contacto
 */
+
 
 .contact_main{
     position: relative;
@@ -362,20 +341,19 @@ Finaliza el main de ayuda y comienza el Main de contacto
     left: 450px;
 }
 
-  
-  .mapa {
-    max-width: 50%;
-    position: relative;
-    top: -200px;
-    left: 100px;
-  }
-  
-  .pie {
-    position: relative;
-    text-align: center;
-    top: -210px;
-    right: 230px;
-  }
+.mapa {
+max-width: 50%;
+position: relative;
+top: -200px;
+left: 100px;
+}
+
+.pie {
+position: relative;
+text-align: center;
+top: -210px;
+right: 230px;
+}
 
 .teléfono{
     position: relative;
@@ -437,11 +415,9 @@ Finaliza el main de contacto y comienza de la cesta
     padding-bottom: 4rem;
 }
 
-
     /* -------------Comienzo de los articulos de la cesta-------------*/
 
 .cesta{
-    
     height: 8rem;
     padding-left: 2rem;
     width: 45rem;
@@ -465,7 +441,6 @@ Finaliza el main de contacto y comienza de la cesta
     display: flex;
 }
 
-
 .producto img{
     object-fit: fill;
     padding-top: 1rem;
@@ -485,7 +460,6 @@ Finaliza el main de contacto y comienza de la cesta
     padding-left: 2rem;
     font-size: medium;
 }
-
 
     /* -------------Finalizacion de los articulos de la cesta-------------*/
 
@@ -537,7 +511,6 @@ Finaliza el main de contacto y comienza de la cesta
 
 #validar_cupon{
     display: flex; 
-    
 }
 
 #subtotal{
@@ -586,8 +559,6 @@ Finaliza el main de contacto y comienza de la cesta
     height: 2rem;
     width: 15rem;
 }
-
-
     /* -------------Finalizacion del resumen del pago-------------*/
 
 
@@ -595,7 +566,6 @@ Finaliza el main de contacto y comienza de la cesta
 ----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
 Finaliza el main de la cesta y comienza de la lista de favoritos
 */
-
 
 
 .producto_favorito{
@@ -626,7 +596,6 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    
 }
 
 .bloques{
@@ -646,10 +615,12 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     justify-content: center;
 }
 
+
 /*
 ----------Finaliza el Main de la lista de favoritos y comienza el main del producto -------------
 Finaliza el main de la lista de favoritos y comienza el main del producto
 */
+
 
 #bloque_producto{
     display: flex;
@@ -688,13 +659,11 @@ Finaliza el main de la lista de favoritos y comienza el main del producto
     width: 35em;
     justify-content: center;
     font-size: large;
-
 }
 
 #iconos{
     font-size: x-large;
-    padding-left: 2rem;
-    
+    padding-left: 2rem;   
 }
 
 #contenedor_general{
@@ -727,15 +696,14 @@ Finaliza el main de la lista de favoritos y comienza el main del producto
 
 
 /*
-----------Finaliza el Main de producto y empieza el main de hombre -------------
-Finaliza el Main de producto y empieza el main de hombre
+----------Finaliza el Main de producto y empieza el main de hombre y mujer -------------
+Finaliza el Main de producto y empieza el main de hombre y mujer
 */
 
 #contenedor_general{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
     height: fit-content;
     padding-bottom: 5rem;
 }
@@ -791,6 +759,13 @@ Finaliza el Main de producto y empieza el main de hombre
     margin: 0px;
 }
 
+
+/*
+----------Finaliza el Main de hombre y mujer y empieza el main de perfil -------------
+Finaliza el Main de hombre y mujer y empieza el main de perfil
+*/
+
+
 #conteendor_general_perfil{
     display: flex;
     flex-direction: row;
@@ -804,7 +779,6 @@ Finaliza el Main de producto y empieza el main de hombre
     width: 30rem;
     font-size: x-large;
 }
-
 
 #contenedor_perfil img{
     border: 1px solid black;
@@ -833,7 +807,6 @@ Finaliza el Main de producto y empieza el main de hombre
     height: 2rem;
     width: 8rem;
     margin: 0.5rem 1rem;
-
 }
 
 #contenedor_derecha{
@@ -849,8 +822,8 @@ Finaliza el Main de producto y empieza el main de hombre
     margin-left: 10rem;
     background-color: rgba(128, 128, 128, 0.205);
     border: 1px solid black;
-    
 }
+
 #contenedor_informacion div{
     width: 20rem;
     display: flex;
@@ -872,7 +845,6 @@ Finaliza el Main de producto y empieza el main de hombre
 
 #contenedor_interior{
     padding: 2rem 0rem;
-
 }
 
 
