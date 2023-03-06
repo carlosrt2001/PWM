@@ -1,8 +1,16 @@
-fetch("../templates/header.html")
-  .then(response => response.text())
-  .then(data => document.querySelector("header").innerHTML = data);
+$(function() {
+    init();
+});
 
+function init() {
+    initHeader();
+    initFooter();
+}
 
-  fetch("../templates/footer.html")
-  .then(response => response.text())
-  .then(data => document.querySelector("footer").innerHTML = data);
+function initHeader() {
+    $("header").load("../templates/header.html");
+}
+
+function initFooter() {
+    $("footer").load("../templates/footer.html")
+}
