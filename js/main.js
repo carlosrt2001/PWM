@@ -10,7 +10,8 @@ function init() {
 }
 
 function initHeader() {
-    $("header").load("../templates/header.html")
+    $(".header").load("../templates/header.html")
+    $(".header2").load("../templates/header2.html")
     
 }
 
