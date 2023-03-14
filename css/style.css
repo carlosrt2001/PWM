@@ -329,7 +329,106 @@ Finaliza el main de nuestra historia y comienza el Main de ayuda
 Finaliza el main de ayuda y comienza el Main de contacto
 */
 
+/* Estilo para el título */
+.título {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .título h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 
+  .fila_contacto{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Estilo para la ubicación */
+  .ubicación {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px; 
+  }
+  .ubicación .mapa {
+    width: 80%;
+    height: 90%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .ubicación .pie {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+ /* Estilo para el teléfono y el correo electrónico */
+.telefonoymail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .telefonoymail .teléfono, .telefonoymail .mail {
+    padding-right: 100px;
+  }
+  .telefonoymail .uil {
+    font-size: 80px;
+  }
+  .telefonoymail p {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el horario */
+  .horario {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .horario p {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  /* Estilo para las redes sociales */
+
+  .instaytwitter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .RRSS {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .RRSS h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .RRSS .uil {
+    font-size: 80px;
+    margin-right: 10px;
+  }
+  .RRSS p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .instagram{
+    margin-right: 50px;
+  }
+
+
+/*
 .contact_main{
     position: relative;
     top: -200px;
@@ -354,6 +453,7 @@ text-align: center;
 top: -210px;
 right: 230px;
 }
+
 
 .teléfono{
     position: relative;
@@ -395,7 +495,7 @@ right: 230px;
     position: relative;
     top: -100px;
 }
-
+*/
 
 /*
 ----------Finaliza el Main de contacto y comeinzo de la cesta-------------
@@ -845,6 +945,195 @@ Finaliza el Main de hombre y mujer y empieza el main de perfil
 
 #contenedor_interior{
     padding: 2rem 0rem;
+}
+
+
+
+/*
+COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
+*/
+
+/*TABLET*/
+@media (max-width: 991.98px){
+    .botones_ayuda{
+        display:none;
+    }
+
+    /*CONTACTO*/
+    .fila_contacto{
+        flex-direction: column;
+      }
+    
+    .telefonoymail {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    
+    .telefonoymail .teléfono, .telefonoymail .mail {
+        padding-left: 20px;
+        padding-right: 0px;
+      }
+
+    
+    /*PRODUCTO*/
+    
+    #bloque_producto{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #bloque_producto img{
+        height: 50%;
+        width: 50%;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    #bloque_informacion{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    #contenedor_general{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #bloque_interacciones{
+        flex-direction: column;
+        padding-left: 250px;
+    }
+
+    #iconos{
+        padding-left: 4rem; 
+        margin-top: 20px;  
+    }
+
+    #contenedor_general{
+        flex-direction: column;
+    }
+
+    #contenedor_estrellas{
+        margin-top: 20px;
+        padding-left: 0px;
+        margin-right: 30px;
+    }
+
+    #bloque_reseña{
+        width: 33rem;
+        padding-left: 0px;
+    }
+
+}
+
+/*CASO INTERMEDIO*/
+@media (max-width: 1170px){
+
+    /*PRODUCTO*/
+    
+    #bloque_producto img{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    #contenedor_general{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contenedor_estrellas{
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    #bloque_interacciones{
+        margin-left: 10px;
+    }
+
+}
+
+
+/* MOVIL */
+@media (max-width: 575.98px) {
+    /*AYUDA*/
+    .botones_ayuda{
+        display:none;
+    }
+
+    /*FAVORTIOS*/
+    .bloques {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    .bloques > * {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    
+    /*PRODUCTO*/
+    
+    #bloque_producto{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #bloque_producto img{
+        height: 50%;
+        width: 50%;
+    }
+
+    #bloque_informacion{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    #contenedor_general{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #bloque_interacciones{
+        flex-direction: column;
+        padding-left: 150px;
+    }
+
+    #iconos{
+        padding-left: 4rem; 
+        margin-top: 20px;  
+    }
+
+    #contenedor_estrellas{
+        width: 30rem;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    #bloque_reseña{
+        width: 33rem;
+        padding-left: 50px;
+    }
+
+    
+
+    /*CONTACTO*/
+    .fila_contacto{
+        flex-direction: column;
+      }
+    
+    .telefonoymail {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    
+    .telefonoymail .teléfono, .telefonoymail .mail {
+        padding-left: 20px;
+        padding-right: 0px;
+      }
+    
+
+    
 }
 
 
