@@ -154,6 +154,7 @@ Comienzo del submenu para tener las categorias de hombre y mujer
 }
 
 
+
 /*
 -----------------Fin del header comun y comienzo del footer comun----------------
 Acaba el header comun a todos los ficheros y empieza el footer comun
@@ -286,11 +287,13 @@ Finaliza el main del index y comienza el Main del sobre nosotros
 
 .nuestra_contenedor{
     display: flex;
+    padding-bottom: 1rem;
 }
 
 .título{
     text-align: center;
 }
+
 
 .nuestra_historia{
     text-align: justify;
@@ -299,8 +302,8 @@ Finaliza el main del index y comienza el Main del sobre nosotros
     justify-content: space-between;
     padding-top: 2rem;
     padding-left: 2rem;
-    padding-bottom: 20rem;
-    height: 20rem;
+    padding-bottom: 5rem;
+    
 }
 
 .nuestra_historia img{
@@ -568,6 +571,21 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
 */
 
 
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
+
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
+
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
+
 .producto_favorito{
     display: flex;
     flex-direction: column;
@@ -575,14 +593,14 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     width: 15rem;
     justify-content: center;
     height: 15rem;
+    margin-bottom: 1rem;
 }
 
 .producto_favorito img{
     height: 11rem;
     width: 11rem;
-    padding-left: 2rem;
     object-fit: scale-down;
-    padding-top: 2rem;
+
 }
 
 .producto_favorito a{
@@ -595,13 +613,13 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
 .margen_izquierda{
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
 }
 
+
 .bloques{
-    padding-top: 2rem;
     display: flex;
-    width: 60rem;
+    flex-flow: row wrap;
+    width: 55rem;
     justify-content: space-between;
 }
 
@@ -621,6 +639,23 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
 Finaliza el main de la lista de favoritos y comienza el main del producto
 */
 
+
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
+/*
+----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
+Finaliza el main de la cesta y comienza de la lista de favoritos
+*/
 
 #bloque_producto{
     display: flex;
@@ -759,6 +794,29 @@ Finaliza el Main de producto y empieza el main de hombre y mujer
     margin: 0px;
 }
 
+/*
+----------------------------Estas lineas de codigo hay que modificarlas para centrar el contenido----------------------------
+*/
+
+            #encabezado_main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #encabezado_main h5{
+                text-align: center;
+                margin-right: auto;
+            }
+            #encabezado_main form{
+                margin-left: auto;
+            }
+
+/*
+----------------------------Estas lineas de codigo hay que modificarlas para centrar el contenido----------------------------
+*/
+
+
 
 /*
 ----------Finaliza el Main de hombre y mujer y empieza el main de perfil -------------
@@ -766,7 +824,7 @@ Finaliza el Main de hombre y mujer y empieza el main de perfil
 */
 
 
-#conteendor_general_perfil{
+#contenedor_general_perfil{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -846,7 +904,83 @@ Finaliza el Main de hombre y mujer y empieza el main de perfil
 #contenedor_interior{
     padding: 2rem 0rem;
 }
+@media (max-width: 991.98px) {
+    /*
+    ----------Aqui comienza el responsive de nuestra historia
+    */
+    .nuestra_historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nuestra_historia p{
+        font-size: small;
+        padding-right: 2rem;
+    }
+    .nuestra_historia img{
+        padding-top: 2rem;
+        height: 10rem;
+        width: 20rem;
+    }
+
+    /*
+    ----------Aqui finaliza el responsive de nuestra historia y empieza el del main del index
+    */
+
+    .foto_main{
+        background-attachment: scroll;
+        height: 20rem;
+        background-size: cover;
+    }
+
+    .articulos{
+        font-size: x-large;
+    }
+
+    /*
+    ----------Falta el responsive d elos contenedores de las imagenes que se va a hacer con js
+    */
+
+    .bloques{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
 
+    /*
+    Aqui el responsive del resumen de pago
+    */
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .cesta{
+        -webkit-transform:scale(0.90);
+        transform:scale(0.90);
+    }
 
+    #contenedor_general_perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenedor_boton{
+        display: none;
+    }
+
+    #contenedor_derecha{
+        display: flex;
+        justify-content: center;
+        -webkit-transform:scale(0.95);
+        transform:scale(0.95);
+    }
+
+    #contenedor_informacion{
+        margin-left: 0rem;
+    }
+
+ }

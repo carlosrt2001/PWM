@@ -1,5 +1,7 @@
+
 $(function() {
     init();
+
 });
 
 function init() {
@@ -8,9 +10,11 @@ function init() {
 }
 
 function initHeader() {
-    $("header").load("../templates/header.html");
+    $("header").load("../templates/header.html")
+    
 }
 
 function initFooter() {
     $("footer").load("../templates/footer.html")
 }
+
