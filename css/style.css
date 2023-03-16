@@ -683,27 +683,21 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
 */
 
 
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
+#favoritos_seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
 
 .producto_favorito{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
     width: 15rem;
-    justify-content: center;
     height: 15rem;
     margin-bottom: 1rem;
 }
@@ -722,52 +716,82 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     color: red;
 }
 
-.margen_izquierda{
-    display: flex;
-    justify-content: center;
-}
-
 
 .bloques{
-    display: flex;
-    flex-flow: row wrap;
-    width: 55rem;
-    justify-content: space-between;
+    display: grid;
+    width: 60rem;
+    grid-template-columns: repeat(3, 3fr);
 }
 
-#favoritos_seccion{
-    padding-bottom: 5rem;
-}
+.item-1, .item-2, .item-3 {
+    grid-row: 1;
+  }
+  
+  .item-4, .item-5, .item-6 {
+    grid-row: 2;
+  }
+  
+  .item-7, .item-8, .item-9 {
+    grid-row: 3;
+  }
 
-#favoritos_seccion h4{
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-}
 
+
+        /*
+        .producto_favorito{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 15rem;
+            justify-content: center;
+            height: 15rem;
+            margin-bottom: 1rem;
+        }
+
+        .producto_favorito img{
+            height: 11rem;
+            width: 11rem;
+            object-fit: scale-down;
+
+        }
+
+        .producto_favorito a{
+            justify-content: center;
+            display: flex;
+            font-size: xx-large;
+            color: red;
+        }
+
+        .margen_izquierda{
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .bloques{
+            display: flex;
+            flex-flow: row wrap;
+            width: 55rem;
+            justify-content: space-between;
+        }
+
+        #favoritos_seccion{
+            padding-bottom: 5rem;
+        }
+
+        #favoritos_seccion h4{
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+        }
+
+        */
 
 /*
 ----------Finaliza el Main de la lista de favoritos y comienza el main del producto -------------
 Finaliza el main de la lista de favoritos y comienza el main del producto
 */
 
-
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
 
 #bloque_producto{
     display: flex;
@@ -841,6 +865,10 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     margin-bottom: 2rem;
 }
 
+#separacion{
+    padding-left: 2rem;
+}
+
 
 /*
 ----------Finaliza el Main de producto y empieza el main de hombre y mujer -------------
@@ -850,7 +878,7 @@ Finaliza el Main de producto y empieza el main de hombre y mujer
 #contenedor_general{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     height: fit-content;
     padding-bottom: 5rem;
 }
