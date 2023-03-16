@@ -1391,8 +1391,8 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 30rem;
-    height: fit-content;
     background-color: rgba(117, 117, 117, 0.34);
 }
 
@@ -1406,7 +1406,7 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .social_media button{
@@ -1432,4 +1432,16 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
 
 .boton_login{
     margin-top: 1rem;
+}
+
+#boton_perfil{
+    padding-top: 2rem;
+    font-size: 4rem;
+    height: min-content;
+}
+
+#formulario_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
