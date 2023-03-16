@@ -716,6 +716,12 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     color: red;
 }
 
+#favoritos_seccion h4{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+
 
 .bloques{
     display: grid;
@@ -1249,6 +1255,25 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
         margin-left: 0rem;
     }
 
+
+    .bloques{
+        display: grid;
+        width: 55rem;
+        grid-template-columns: repeat(3, 3fr);
+    }
+    
+    .item-1, .item-2, .item-3 {
+        grid-row: 1;
+      }
+      
+      .item-4, .item-5, .item-6 {
+        grid-row: 2;
+      }
+      
+      .item-7, .item-8, .item-9 {
+        grid-row: 3;
+      }
+
 }
 
 /*CASO INTERMEDIO*/
@@ -1404,10 +1429,40 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
     #resumen_pago{
         margin-top: 1rem;
     }
+
+    .bloques{
+        display: grid;
+        width: 35rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1rem;
+    }
+    
+    .item-1, .item-2{
+        grid-row: 1;
+    }
+    
+    .item-3, .item-4{
+        grid-row: 2;
+    }
+    
+    .item-5, .item-6{
+        grid-row: 3;
+    }
+
+    .item-7, .item-8{
+        grid-row: 4;
+    }
+
+    .item-9{
+        grid-row: 5;
+    }
     
 }
 
 
+/*
+Aqui el css de iniciar Sesion
+*/
 #contenedor_login_general{
     display: flex;
     justify-content: center;
