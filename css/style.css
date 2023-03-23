@@ -17,6 +17,10 @@ Aqui comienza el estilo del header comun a todos los ficheros
     display: none;
 }
 
+#menu_total{
+    display: none;
+}
+
 .barra_superior{
     background-color: rgba(128, 128, 128, 0.705);
     height: 3rem;
@@ -679,27 +683,21 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
 */
 
 
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
+#favoritos_seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
 
 .producto_favorito{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
     width: 15rem;
-    justify-content: center;
     height: 15rem;
     margin-bottom: 1rem;
 }
@@ -718,23 +716,6 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     color: red;
 }
 
-.margen_izquierda{
-    display: flex;
-    justify-content: center;
-}
-
-
-.bloques{
-    display: flex;
-    flex-flow: row wrap;
-    width: 55rem;
-    justify-content: space-between;
-}
-
-#favoritos_seccion{
-    padding-bottom: 5rem;
-}
-
 #favoritos_seccion h4{
     font-size: xx-large;
     display: flex;
@@ -742,28 +723,81 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
 }
 
 
+.bloques{
+    display: grid;
+    width: 60rem;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.item-1, .item-2, .item-3 {
+    grid-row: 1;
+  }
+  
+  .item-4, .item-5, .item-6 {
+    grid-row: 2;
+  }
+  
+  .item-7, .item-8, .item-9 {
+    grid-row: 3;
+  }
+
+
+
+        /*
+        .producto_favorito{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 15rem;
+            justify-content: center;
+            height: 15rem;
+            margin-bottom: 1rem;
+        }
+
+        .producto_favorito img{
+            height: 11rem;
+            width: 11rem;
+            object-fit: scale-down;
+
+        }
+
+        .producto_favorito a{
+            justify-content: center;
+            display: flex;
+            font-size: xx-large;
+            color: red;
+        }
+
+        .margen_izquierda{
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .bloques{
+            display: flex;
+            flex-flow: row wrap;
+            width: 55rem;
+            justify-content: space-between;
+        }
+
+        #favoritos_seccion{
+            padding-bottom: 5rem;
+        }
+
+        #favoritos_seccion h4{
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+        }
+
+        */
+
 /*
 ----------Finaliza el Main de la lista de favoritos y comienza el main del producto -------------
 Finaliza el main de la lista de favoritos y comienza el main del producto
 */
 
-
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
-/*
-----------Finaliza el Main de cesta y comienzo de la lista de favoritos-------------
-Finaliza el main de la cesta y comienza de la lista de favoritos
-*/
 
 #bloque_producto{
     display: flex;
@@ -837,6 +871,10 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
     margin-bottom: 2rem;
 }
 
+#separacion{
+    padding-left: 2rem;
+}
+
 
 /*
 ----------Finaliza el Main de producto y empieza el main de hombre y mujer -------------
@@ -846,7 +884,7 @@ Finaliza el Main de producto y empieza el main de hombre y mujer
 #contenedor_general{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     height: fit-content;
     padding-bottom: 5rem;
 }
@@ -1217,6 +1255,25 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
         margin-left: 0rem;
     }
 
+
+    .bloques{
+        display: grid;
+        width: 55rem;
+        grid-template-columns: repeat(3, 3fr);
+    }
+    
+    .item-1, .item-2, .item-3 {
+        grid-row: 1;
+      }
+      
+      .item-4, .item-5, .item-6 {
+        grid-row: 2;
+      }
+      
+      .item-7, .item-8, .item-9 {
+        grid-row: 3;
+      }
+
 }
 
 /*CASO INTERMEDIO*/
@@ -1373,6 +1430,101 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
         margin-top: 1rem;
     }
 
+    .bloques{
+        display: grid;
+        width: 35rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1rem;
+    }
+    
+    .item-1, .item-2{
+        grid-row: 1;
+    }
+    
+    .item-3, .item-4{
+        grid-row: 2;
+    }
+    
+    .item-5, .item-6{
+        grid-row: 3;
+    }
+
+    .item-7, .item-8{
+        grid-row: 4;
+    }
+
+    .item-9{
+        grid-row: 5;
+    }
     
 }
 
+
+/*
+Aqui el css de iniciar Sesion
+*/
+#contenedor_login_general{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+
+}
+
+.contenedor_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    background-color: rgba(117, 117, 117, 0.34);
+}
+
+.contenedor_login form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.social_media button{
+    border: 1px solid black;
+    border-radius: 5rem;
+    width: 15rem;
+    height: 2rem;
+    margin: 0.1rem;
+}
+
+#contenedor_interior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding-top: 2rem;
+}
+
+#contenedor_interior input{
+    height: 2rem;
+    width: 15rem;
+}
+
+.boton_login{
+    margin-top: 1rem;
+}
+
+#boton_perfil{
+    padding-top: 2rem;
+    font-size: 4rem;
+    height: min-content;
+}
+
+#formulario_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
