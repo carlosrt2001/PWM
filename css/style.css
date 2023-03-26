@@ -32,8 +32,8 @@ Aqui comienza el estilo del header comun a todos los ficheros
 .botones{
     padding: 1rem;
     font-style: normal;
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .botones:hover{
@@ -48,8 +48,8 @@ Aqui comienza el estilo del header comun a todos los ficheros
 }
 
 .menu_registro a{
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important;
+    color: black !important;
     padding: 1rem;
     cursor: pointer;
 }
@@ -59,6 +59,7 @@ Esto es solo para visualizar
 */
 .menu_registro a:hover{
     background-color: red;
+    color: black;
 }
 
 
@@ -124,7 +125,7 @@ Comienzo de la barra de navegacion para poder seleccionar los iconos y entrar a 
 .menu a{
     color: black;
     font-size: xx-large;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -150,7 +151,7 @@ Comienzo del submenu para tener las categorias de hombre y mujer
 .tipo a{
     display: flex;
     justify-content: center;
-    text-decoration: none;
+    text-decoration: none !important;
     width: 20%;
     padding: 1rem 3rem 1rem 1rem;
     color: black;
@@ -237,7 +238,7 @@ Comienza la seccion de articulos recomendados
 
 .imagenes_articulos img{
     height: 10rem;
-    width: fit-content;
+    object-fit: fill;
     padding: 3rem;
 }
 
@@ -285,7 +286,6 @@ Finaliza la seccion de articulos recomendados y empieza ventas populares
 #foto_abajo{
     padding-top: 2rem;
 }
-
 
 /*
 ----------Finaliza el Main del index y comienzo de sobre nosotros-------------
@@ -691,18 +691,8 @@ Finaliza el main de la cesta y comienza de la lista de favoritos
 }
 
 
-.producto_favorito{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    width: 15rem;
-    height: 15rem;
-    margin-bottom: 1rem;
-}
 
-.producto_favorito img{
+.sneaker_image{
     height: 11rem;
     width: 11rem;
     object-fit: scale-down;
@@ -871,11 +861,6 @@ Finaliza el main de la lista de favoritos y comienza el main del producto
     margin-bottom: 2rem;
 }
 
-#separacion{
-    padding-left: 2rem;
-}
-
-
 /*
 ----------Finaliza el Main de producto y empieza el main de hombre y mujer -------------
 Finaliza el Main de producto y empieza el main de hombre y mujer
@@ -895,7 +880,9 @@ Finaliza el Main de producto y empieza el main de hombre y mujer
     flex-direction: column;
     align-items: center;
     width: 25rem;
-    height: auto;
+    height: fit-content;
+    position: sticky;
+    top: 0;
 }
 
 #contenedor_filtros hr{
@@ -1051,12 +1038,168 @@ Finaliza el Main de hombre y mujer y empieza el main de perfil
     padding: 2rem 0rem;
 }
 
+
+/*
+Aqui el css de iniciar Sesion
+*/
+#contenedor_login_general{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+
+}
+
+.contenedor_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    background-color: rgba(117, 117, 117, 0.34);
+}
+
+.contenedor_login form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.social_media button{
+    border: 1px solid black;
+    border-radius: 5rem;
+    width: 15rem;
+    height: 2rem;
+    margin: 0.1rem;
+}
+
+#contenedor_interior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding-top: 2rem;
+}
+
+#contenedor_interior input{
+    height: 2rem;
+    width: 15rem;
+}
+
+.boton_login{
+    margin-top: 1rem;
+}
+
+#boton_perfil{
+    padding-top: 2rem;
+    font-size: 4rem;
+    height: min-content;
+}
+
+#formulario_login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.section_shop_right {
+    margin: 2rem 2rem 6rem 0;
+    width: 100vw;
+    height: fit-content;
+}
+
+
+.section_shop_right .row {
+    margin-top: 2rem;
+}
+
+
+.container-fluid{ 
+    display: flex;
+    align-items: center;
+
+}
+
+
+.product_card {
+    border-radius: .5rem;
+    width: auto;
+    height: fit-content;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    
+}
+
+.product_card:hover,
+.product_card:focus {
+    border: 2px solid rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+.crop img{
+    object-fit: cover;
+}
+
+#product_container{
+    display: flex;
+    width: 100%;
+}
+
+#heart{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+}
+
+#favoritos{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    padding-top: 2rem;
+}
+
+
+
+
 /*
 COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
 */
 
 /*TABLET*/
 @media (max-width: 991.98px){
+
+    .tipo{
+        margin-top: 3rem;
+    }
+    
+
+    .imagenes_articulos img{
+        height: 13rem;
+        width: 13rem;
+        padding: 3rem;
+        object-fit: scale-down;
+    }
+
+
+    #foto_eliminada{
+        display: none;
+    }
+
+
+    .seccion_ventas{
+        display: none;
+    }
+
+    
     .header{
         display: none;
     }
@@ -1064,6 +1207,7 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
     .header2{
         display: initial;
     }
+    
 
     .menu{
         display: flex;
@@ -1205,19 +1349,8 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
         font-size: x-large;
     }
 
-    /*
-    ----------Falta el responsive d elos contenedores de las imagenes que se va a hacer con js
-    */
 
-    .bloques{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-
-    /*
-    Aqui el responsive del resumen de pago
-    */
+/*--------------------------RESUMEN DE PAGO--------------------------*/
     #contenedor{
         display: flex;
         flex-direction: column;
@@ -1255,31 +1388,52 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
         margin-left: 0rem;
     }
 
-
-    .bloques{
-        display: grid;
-        width: 55rem;
-        grid-template-columns: repeat(3, 3fr);
-    }
+/*--------------------------FAVORITOS Y HOMBRE Y MUJER--------------------------*/
     
-    .item-1, .item-2, .item-3 {
-        grid-row: 1;
-      }
-      
-      .item-4, .item-5, .item-6 {
-        grid-row: 2;
-      }
-      
-      .item-7, .item-8, .item-9 {
-        grid-row: 3;
-      }
 
 }
 
-/*CASO INTERMEDIO*/
+
+@media (max-width: 850px){
+/*--------------------------MAIN--------------------------*/
+
+    .imagenes_articulos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+    #foto_eliminada2{
+        display: none;
+    }
+
+    
+
+}
+
+
+/* --------------------------------------------------------------
+------------------MEDIA QUERY CASO INTERMEDIO--------------------
+----------------------------------------------------------------*/
 @media (max-width: 1170px){
 
-    /*PRODUCTO*/
+/*--------------------------MAIN--------------------------*/
+
+    .imagenes_articulos img{
+        width: 25%;
+        object-fit: scale-down;
+    }
+
+    .seccion_ventas{
+        display: none;
+    }
+
+    .imagenes_articulos{
+        -webkit-transform:scale(0.75);
+        transform:scale(0.75);
+    }
+
+/*--------------------------PRODUCTO--------------------------*/
     
     #bloque_producto img{
         padding-left: 5rem;
@@ -1301,8 +1455,39 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
     }
 
 
+    #contenedor_derecha{
+        -webkit-transform:scale(0.75);
+        transform:scale(0.75);
+    }
+
+/*------------------FAVORITOS-HOMBRE-MUJER-------------------------*/
+
+    #contenedor_filtros{
+        display: none;
+    }
 
 }
+
+
+/* --------------------------------------------------------------
+-------------------MEDIA QUERY CASO INTERMEDIO-------------------
+----------------------------------------------------------------*/
+
+@media (max-width: 1300px){
+
+    #contenedor_general_perfil{
+        -webkit-transform:scale(0.8);
+        transform:scale(0.8);
+    }
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 
 
 /* --------------------------------------------------------------
@@ -1310,6 +1495,20 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
 ----------------------------------------------------------------*/
 
 @media (max-width: 575.98px) {
+    .imagenes_articulos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20rem;
+    }
+
+    .imagenes_articulos img{
+        object-fit: cover;
+    }
+
+    #foto_eliminada3{
+        display: none;
+    }
 
     /* HEADER DEL MOVIL */
     #barra_busqueda{
@@ -1430,101 +1629,7 @@ COMIENZO DEL SPRINT 2 (MEDIA QUERYS)
         margin-top: 1rem;
     }
 
-    .bloques{
-        display: grid;
-        width: 35rem;
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 1rem;
-    }
-    
-    .item-1, .item-2{
-        grid-row: 1;
-    }
-    
-    .item-3, .item-4{
-        grid-row: 2;
-    }
-    
-    .item-5, .item-6{
-        grid-row: 3;
-    }
-
-    .item-7, .item-8{
-        grid-row: 4;
-    }
-
-    .item-9{
-        grid-row: 5;
-    }
     
 }
 
 
-/*
-Aqui el css de iniciar Sesion
-*/
-#contenedor_login_general{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 3rem;
-
-}
-
-.contenedor_login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
-    background-color: rgba(117, 117, 117, 0.34);
-}
-
-.contenedor_login form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.social_media{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
-}
-
-.social_media button{
-    border: 1px solid black;
-    border-radius: 5rem;
-    width: 15rem;
-    height: 2rem;
-    margin: 0.1rem;
-}
-
-#contenedor_interior{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    padding-top: 2rem;
-}
-
-#contenedor_interior input{
-    height: 2rem;
-    width: 15rem;
-}
-
-.boton_login{
-    margin-top: 1rem;
-}
-
-#boton_perfil{
-    padding-top: 2rem;
-    font-size: 4rem;
-    height: min-content;
-}
-
-#formulario_login {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}

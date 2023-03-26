@@ -7,6 +7,7 @@ $(function() {
 function init() {
     initHeader();
     initFooter();
+    initHamburger();
 }
 
 function initHeader() {
@@ -18,4 +19,3 @@ function initHeader() {
 function initFooter() {
     $("footer").load("../templates/footer.html")
 }
-
