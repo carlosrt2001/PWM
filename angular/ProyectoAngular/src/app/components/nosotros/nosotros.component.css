@@ -1,0 +1,26 @@
+
+.nuestra_contenedor{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.título{
+    text-align: center;
+}
+
+
+.nuestra_historia{
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+    
+}
+
+.nuestra_historia img{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}

@@ -1,6 +1,5 @@
-#foto{
+.foto_main{
     background-image: url("../../../assets/tienda.jpeg");
-    
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +12,6 @@
     font-size: xx-large;
     font-style: oblique;
 }
-
 
 #contenedor{
     display: flex;
@@ -30,4 +28,73 @@
     height: 10rem;
     object-fit: fill;
     padding: 3rem;
+}
+
+
+.articulos{     /* Clase que da estilo a los titulos de las secciones */
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.imagenes_articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    height: 20rem;
+    width: 100%;
+}
+
+.imagenes_articulos img{
+    height: 10rem;
+    object-fit: fill;
+    padding: 3rem;
+}
+
+.seccion_articulos{
+    height: 35rem;
+    margin-top: 5rem;   /* hay que modificar el margin top para que no de error al hacerlo responsive */
+}
+
+/*
+----------Finaliza articulos recomendados y empieza Ventas Populares-------------
+Finaliza la seccion de articulos recomendados y empieza ventas populares 
+*/
+
+
+.seccion_ventas{
+    background-color: rgba(203, 202, 202, 0.181);
+    margin-bottom: 10rem;   /* hay que modificar el margin botton */
+}
+
+.imagenes_ventas_populares {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.imagenes_ventas_populares img{
+    height: 30rem;
+    width: 20rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.fotos_ventas_populares {
+    display: flex;
+    flex-direction: column; 
+}
+
+.fotos_ventas_populares img{
+    height: 14rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+#foto_abajo{
+    padding-top: 2rem;
 }

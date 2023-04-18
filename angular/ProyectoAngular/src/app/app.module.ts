@@ -9,7 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HombreComponent } from './components/hombre/hombre.component';
 import { MujerComponent } from './components/mujer/mujer.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component'
 
 
 const appRoutes:Routes=[
@@ -19,7 +20,8 @@ const appRoutes:Routes=[
   {path:'ayuda', component:AyudaComponent},
   {path:'contacto', component:ContactoComponent},
   {path:'hombre', component:HombreComponent},
-  {path:'mujer', component:MujerComponent}
+  {path:'mujer', component:MujerComponent},
+  {path:'login', component:LoginComponent}
 
 ]
 
@@ -34,6 +36,7 @@ const appRoutes:Routes=[
     HombreComponent,
     MujerComponent,
     FooterComponent,
+    LoginComponent,
 
   ],
   imports: [

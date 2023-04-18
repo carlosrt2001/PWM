@@ -1,0 +1,96 @@
+.título {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .título h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .fila_contacto{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Estilo para la ubicación */
+  .ubicación {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px; 
+  }
+  .ubicación .mapa {
+    width: 80%;
+    height: 90%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .ubicación .pie {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+ /* Estilo para el teléfono y el correo electrónico */
+.telefonoymail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .telefonoymail .teléfono, .telefonoymail .mail {
+    padding-right: 100px;
+  }
+  .telefonoymail .uil {
+    font-size: 80px;
+  }
+  .telefonoymail p {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el horario */
+  .horario {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .horario p {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  /* Estilo para las redes sociales */
+
+  .instaytwitter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .RRSS {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .RRSS h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .RRSS .uil {
+    font-size: 80px;
+    margin-right: 10px;
+  }
+  .RRSS p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .instagram{
+    margin-right: 50px;
+  }
