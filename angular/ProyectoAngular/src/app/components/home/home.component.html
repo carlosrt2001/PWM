@@ -1,0 +1,13 @@
+<div id="foto"></div>
+
+<div id="principal">
+     <h4>{{recomendados}}</h4>
+
+    <div id="contenedor">
+        <div *ngFor="let item of lista">
+            <img src="{{item}}" alt="">
+        </div>
+    </div>
+
+    <h4>{{populares}}</h4>
+</div>

@@ -1,0 +1,156 @@
+
+.header{
+    height: 20rem;
+}
+
+.header2{
+    display: none;
+}
+
+#menu_total{
+    display: none;
+}
+
+.barra_superior{
+    background-color: rgba(128, 128, 128, 0.705);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.botones{
+    padding: 1rem;
+    font-style: normal;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.botones:hover{
+    background-color: rgba(128, 128, 128, 0.755);
+    color: white;
+}
+
+.menu_registro{
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 5rem 0rem 0rem;
+}
+
+.menu_registro a{
+    text-decoration: none !important;
+    color: black !important;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/*
+Esto es solo para visualizar
+*/
+.menu_registro a:hover{
+    background-color: red;
+    color: black;
+}
+
+
+/*
+----------------------------Parte del header------------------------------
+Contenedor que va a tener el logo, la barra de busqueda y la de navegacion
+*/
+
+
+.menu{
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#barra_busqueda{
+    padding-top: 5rem;
+}
+
+#busqueda{
+    height: 2rem;
+    border-radius: 1rem;
+    width: 20rem;
+    padding-left: 1rem;
+    background-color: rgba(128, 128, 128, 0.705);
+    border: 1px solid black; 
+}
+
+.menu img{
+    justify-content: flex-start;
+}
+
+
+/*
+----------------------------Parte del header------------------------------
+Comienzo de la barra de navegacion para poder seleccionar los iconos y entrar a diferentes secciones
+*/
+
+
+.menu nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.menu ul{
+    float: right;
+    padding-right: 2rem;
+}
+
+.menu nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu li{
+    padding-right: 3rem;
+}
+
+.menu a{
+    color: black;
+    font-size: xx-large;
+    text-decoration: none !important;
+}
+
+
+.menu a:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+/*
+----------------------------Parte del header------------------------------
+Comienzo del submenu para tener las categorias de hombre y mujer
+*/
+
+
+.tipo{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.705);
+    height: 3rem;
+    margin-bottom: 3rem;
+}
+
+.tipo a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+    width: 20%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: black;
+}
+
+.tipo a:hover{
+    background-color: rgba(128, 128, 128, 0.755);
+    color: white;
+}
+
+
