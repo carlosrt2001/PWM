@@ -1,0 +1,33 @@
+#foto{
+    background-image: url("../../../assets/tienda.jpeg");
+    
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#principal h4{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    height: 20rem;
+    width: 100%;
+    
+}
+
+
+#contenedor div img{
+    height: 10rem;
+    object-fit: fill;
+    padding: 3rem;
+}
