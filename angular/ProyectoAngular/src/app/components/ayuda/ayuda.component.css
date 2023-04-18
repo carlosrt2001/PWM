@@ -1,0 +1,26 @@
+
+.texto p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.tituloAyuda{
+    text-align: center;
+}
+
+.parrafoAyuda{
+    text-align: justify;
+}
+
+.botones{
+    padding: 1rem;
+    font-style: normal;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+
+.botones:hover{
+    background-color: rgba(128, 128, 128, 0.755);
+    color: white;
+}
