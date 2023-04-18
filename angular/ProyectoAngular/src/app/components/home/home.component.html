@@ -1,13 +1,24 @@
-<div id="foto"></div>
-
-<div id="principal">
-     <h4>{{recomendados}}</h4>
-
-    <div id="contenedor">
-        <div *ngFor="let item of lista">
-            <img src="{{item}}" alt="">
+<div class="foto_main"></div>
+    <section class="seccion_articulos">
+        <div class="panel_articulos">
+            <h4 class="articulos"> Articulos Recomendados</h4>
+            <div class="imagenes_articulos">
+                <img src="../../../assets/nike.jpeg" alt="" srcset="">
+                <img id="foto_eliminada3" src="../../../assets/north face.jpeg" alt="" srcset="">
+                <img id="foto_eliminada2" src="../../../assets/adidas.jpeg" alt="" srcset="">
+                <img id="foto_eliminada" src="../../../assets/nike-2.jpeg" alt="" srcset="">
+            </div> 
         </div>
-    </div>
-
-    <h4>{{populares}}</h4>
-</div>
+    </section>
+        
+    <section class="seccion_ventas">
+        <h4 class="articulos">Ventas populares</h4>
+        <div class="imagenes_ventas_populares">
+            <img id="foto_izquierda" src=".../../../assets/imagen2.jpeg" alt="" srcset="">
+            <div class="fotos_ventas_populares">
+                <img id="foto_arriba" src="../../../assets/imagen3.jpeg" alt="" srcset="">
+                <img id="foto_abajo" src="../../../assets/imagen4.jpeg" alt="" srcset="">
+            </div>
+            <img src="../../../assets/imagen1.jpeg" alt="" srcset="">
+        </div>
+    </section>
