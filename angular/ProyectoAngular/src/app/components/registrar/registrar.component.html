@@ -8,7 +8,11 @@
                 <button class="apple sign-in"><i class="uil uil-apple"></i> Iniciar Sesion con Apple</button>
 
                 <div id="contenedor_interior">
-                    <input type="text" id="username" class="input_login" name="username" placeholder="Nombre de usuario"  [(ngModel)]="cuadroNombre">
+                    <input type="text" id="username" class="input_login" name="username" placeholder="Nombre"  [(ngModel)]="cuadroNombre">
+                    <input type="text" id="name" class="input_login" name="name" placeholder="Apellidos"  [(ngModel)]="cuadroApellidos">
+                    <input type="text" id="nick" class="input_login" name="nick" placeholder="Nombre de Usuario"  [(ngModel)]="cuadroNick">
+                    <input type="text" id="correo" class="input_login" name="correo" placeholder="Correo"  [(ngModel)]="cuadroCorreo">
+                    <input type="text" id="tel" class="input_login" name="telefono" placeholder="Telefono"  [(ngModel)]="cuadroTelefono">
                     <input type="password" id="password" class="input_login" name="password" placeholder="Contraseña"  [(ngModel)]="cuadroClave">
                     <input type="submit" class="boton_login" value="Iniciar Sesión" (click)="agregarUsuario()">
                     <p class="mensaje">¿Olvido su contraseña?</p>
@@ -21,8 +25,7 @@
 
 <h3>Prueba de formulario</h3>
 <div *ngFor="let aux of persona">
-    {{aux.nombre}} {{aux.apellidos}} {{aux.correo}} {{aux.telefono}} {{aux.clave}}
+    {{aux.nombre}} {{aux.apellidos}} {{aux.nick}} {{aux.correo}} {{aux.telefono}} {{aux.clave}}
 
 </div>
-
 

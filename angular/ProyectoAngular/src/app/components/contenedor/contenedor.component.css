@@ -1,0 +1,40 @@
+
+.product_card {
+    border-radius: .5rem;
+    width: auto;
+    height: fit-content;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    
+}
+
+.product_card:hover,
+.product_card:focus {
+    border: 2px solid rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+
+.crop img{
+    object-fit: cover;
+}
+
+#product_container{
+    display: flex;
+    width: 100%;
+}
+
+#heart{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+}
+
+#favoritos{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    padding-top: 2rem;
+}

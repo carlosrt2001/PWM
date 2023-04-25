@@ -10,7 +10,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { HombreComponent } from './components/hombre/hombre.component';
 import { MujerComponent } from './components/mujer/mujer.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { LoginComponent } from './components/login/login.component'
+import { LoginComponent } from './components/login/login.component';
+import { ContenedorComponent } from './components/contenedor/contenedor.component';
+import { FavoritosComponent } from './components/favoritos/favoritos.component';
+
+import { DataServices } from './data.services';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { RegistrarComponent } from './components/registrar/registrar.component';
+//import { UsuarioServices } from './usuario.services';
+
+
+
 
 
 const appRoutes:Routes=[
@@ -21,7 +33,10 @@ const appRoutes:Routes=[
   {path:'contacto', component:ContactoComponent},
   {path:'hombre', component:HombreComponent},
   {path:'mujer', component:MujerComponent},
-  {path:'login', component:LoginComponent}
+  {path:'login', component:LoginComponent},
+  {path:'app-contenedor', component:ContenedorComponent},
+  {path:'app-favoritos', component:FavoritosComponent},
+  {path:'app-registrar', component:RegistrarComponent}
 
 ]
 
@@ -37,13 +52,21 @@ const appRoutes:Routes=[
     MujerComponent,
     FooterComponent,
     LoginComponent,
+    ContenedorComponent,
+    FavoritosComponent,
+    RegistrarComponent
 
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [DataServices, /*UsuarioServices*/],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+    
+
+}
