@@ -13,5 +13,4 @@ export class DataServices{
         this.httpClient.put('https://console.firebase.google.com/u/0/project/pwm-bd/database/pwm-bd-default-rtdb/data/~2F?hl=es/datos.json', persona);
 
     }
-
 }

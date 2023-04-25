@@ -1,38 +1,63 @@
-
-<div class="barra_superior">
-    <a href="/nosotros" class="botones">{{nosotros}}</a>
-    <a href="/ayuda" class="botones">{{ayuda}}</a>
-    <a href="/contacto" class="botones">{{contacto}}</a>
+<div class="header">
+    <div class="barra_superior">
+        <a href="/nosotros" class="botones">{{nosotros}}</a>
+        <a href="/ayuda" class="botones">{{ayuda}}</a>
+        <a href="/contacto" class="botones">{{contacto}}</a>
+    </div>
+    
+    <div class="menu_registro">
+        <a id="iniciar" href="/login">{{iniciar}}</a>
+        <a href="/app-registrar">{{registrarse}}</a>
+    </div>
+    
+    <div class="menu">
+        <!--Falta la imagen del logo-->
+        
+        <img src="../../../assets/jc.jpeg" alt="" srcset="">
+        
+        
+    
+        <div id="barra_busqueda">
+            <input id="busqueda" type="search" value="Buscar...">
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="/inicio" class="uil uil-home"></a></li>
+                <li><a href="/app-favoritos"class="uil uil-heart-alt"></a></li>
+                <li><a href="../cesta.html"class="uil uil-shopping-bag"></a></li>
+                <li><a href="/app-perfil"class="uil uil-user-circle"></a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="tipo">
+        <a href="/hombre">{{hombre}}</a>
+        <a href="/mujer">{{mujer}}</a>
+    </div>
 </div>
 
-<div class="menu_registro">
-    <a id="iniciar" href="/login">{{iniciar}}</a>
-    <a href="/app-registrar">{{registrarse}}</a>
-</div>
+
+<div class="header2">
 
 <div class="menu">
-    <!--Falta la imagen del logo-->
-    
     <img src="../../../assets/jc.jpeg" alt="" srcset="">
-    
-    
+
 
     <div id="barra_busqueda">
         <input id="busqueda" type="search" value="Buscar...">
     </div>
-
+    
     <nav>
         <ul>
-            <li><a href="/inicio" class="uil uil-home"></a></li>
-            <li><a href="/app-favoritos"class="uil uil-heart-alt"></a></li>
-            <li><a href="../cesta.html"class="uil uil-shopping-bag"></a></li>
-            <li><a href="../perfil.html"class="uil uil-user-circle"></a></li>
+            <li><i class="uil uil-search"></i></li>
+            <li><i class="uil uil-bars"></i></li>
         </ul>
     </nav>
 </div>
 
 <div class="tipo">
-    <a href="/hombre">{{hombre}}</a>
-    <a href="/mujer">{{mujer}}</a>
+    <a href="../hombre.html">Hombre</a>
+    <a href="../mujer.html">Mujer</a>
 </div>
-
+</div>

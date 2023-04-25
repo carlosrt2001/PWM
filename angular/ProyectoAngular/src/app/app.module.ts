@@ -19,6 +19,8 @@ import { DataServices } from './data.services';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RegistrarComponent } from './components/registrar/registrar.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { ContenedorPerfilComponent } from './components/contenedor-perfil/contenedor-perfil.component';
 //import { UsuarioServices } from './usuario.services';
 
 
@@ -36,7 +38,10 @@ const appRoutes:Routes=[
   {path:'login', component:LoginComponent},
   {path:'app-contenedor', component:ContenedorComponent},
   {path:'app-favoritos', component:FavoritosComponent},
-  {path:'app-registrar', component:RegistrarComponent}
+  {path:'app-registrar', component:RegistrarComponent},
+  {path:'app-perfil', component:PerfilComponent}
+  
+
 
 ]
 
@@ -54,7 +59,9 @@ const appRoutes:Routes=[
     LoginComponent,
     ContenedorComponent,
     FavoritosComponent,
-    RegistrarComponent
+    RegistrarComponent,
+    PerfilComponent,
+    ContenedorPerfilComponent
 
   ],
   imports: [

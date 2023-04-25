@@ -1,0 +1,47 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor_general_perfil{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#contenedor_perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    font-size: x-large;
+}
+
+#contenedor_perfil img{
+    border: 1px solid black;
+    object-fit: fill;
+    border-radius: 10rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+#contenedor_perfil div{
+    padding: 2rem;
+    margin-bottom: 4rem;
+    
+}
+
+#contenedor_boton{
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.205);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 20rem;
+}
+
+#contenedor_boton button{
+    height: 2rem;
+    width: 8rem;
+    margin: 0.5rem 1rem;
+}

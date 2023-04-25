@@ -1,6 +1,7 @@
 
 .header{
     height: 20rem;
+    margin-bottom: 4rem;
 }
 
 .header2{
@@ -154,3 +155,91 @@ Comienzo del submenu para tener las categorias de hombre y mujer
 }
 
 
+@media (max-width: 991.98px){
+
+    .tipo{
+        margin-top: 3rem;
+    }
+    
+
+    .imagenes_articulos img{
+        height: 13rem;
+        width: 13rem;
+        padding: 3rem;
+        object-fit: scale-down;
+    }
+
+
+    #foto_eliminada{
+        display: none;
+    }
+
+
+    .seccion_ventas{
+        display: none;
+    }
+
+    
+    .header{
+        display: none;
+    }
+    
+    .header2{
+        display: initial;
+    }
+    
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu img{
+        display: flex;
+        align-self: flex-start;
+        padding-left: 1rem;
+    }
+
+    .menu nav{
+        display: flex;
+        align-self: flex-end;
+        padding-right: 1rem;
+        font-size: xx-large;
+    }
+
+
+    #barra_busqueda{
+        padding-top: 5rem;
+    }
+    
+    #busqueda{
+        height: 2rem;
+        border-radius: 1rem;
+        width: 15rem;
+        padding-left: 1rem;
+        background-color: rgba(128, 128, 128, 0.705);
+        border: 1px solid black; 
+    }
+
+
+    .botones_ayuda{
+        display:none;
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+
+    /* HEADER DEL MOVIL */
+    #barra_busqueda{
+        display: none;
+    }
+    
+    #busqueda{
+        display: none;
+    }
+}

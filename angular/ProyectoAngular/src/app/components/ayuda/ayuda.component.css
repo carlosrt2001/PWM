@@ -24,3 +24,20 @@
     background-color: rgba(128, 128, 128, 0.755);
     color: white;
 }
+
+
+/*TABLET*/
+@media (max-width: 991.98px){
+    .botones_ayuda{
+        display:none;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    /*AYUDA*/
+    .botones_ayuda{
+        display:none;
+    }
+
+}

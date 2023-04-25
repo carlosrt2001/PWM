@@ -98,3 +98,97 @@ Finaliza la seccion de articulos recomendados y empieza ventas populares
 #foto_abajo{
     padding-top: 2rem;
 }
+
+
+
+@media (max-width: 991.98px){
+
+    .tipo{
+        margin-top: 3rem;
+    }
+    
+
+    .imagenes_articulos img{
+        height: 13rem;
+        width: 13rem;
+        padding: 3rem;
+        object-fit: scale-down;
+    }
+
+
+    #foto_eliminada{
+        display: none;
+    }
+
+
+    .seccion_ventas{
+        display: none;
+    }
+    .foto_main{
+        background-attachment: scroll;
+        height: 20rem;
+        background-size: cover;
+    }
+}
+
+
+
+@media (max-width: 850px){
+    /*--------------------------MAIN--------------------------*/
+    
+        .imagenes_articulos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;   
+        }
+    
+        #foto_eliminada2{
+            display: none;
+        }
+    
+        
+    
+}
+
+
+
+/* --------------------------------------------------------------
+------------------MEDIA QUERY CASO INTERMEDIO--------------------
+----------------------------------------------------------------*/
+@media (max-width: 1170px){
+
+    /*--------------------------MAIN--------------------------*/
+    
+        .imagenes_articulos img{
+            width: 25%;
+            object-fit: scale-down;
+        }
+    
+        .seccion_ventas{
+            display: none;
+        }
+    
+        .imagenes_articulos{
+            -webkit-transform:scale(0.75);
+            transform:scale(0.75);
+        }
+}
+
+
+@media (max-width: 575.98px) {
+    .imagenes_articulos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20rem;
+    }
+
+    .imagenes_articulos img{
+        object-fit: cover;
+    }
+
+    #foto_eliminada3{
+        display: none;
+    }
+
+}
