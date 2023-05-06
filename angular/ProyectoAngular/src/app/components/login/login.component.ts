@@ -16,22 +16,15 @@ export class LoginComponent {
   /*
   constructor(private httpClient: HttpClient){}
   */
-  registrarUsuario(){
-    this.registrado=true;
-    this.mensaje="Registrado con exito"
-  }
+  
 
-  persona:Usuario[] = [
-    new Usuario("diego", "cedres", "Nick", "correo1", "telefono1", "miclave"),
-    new Usuario("juan", "cedres", "Nick", "correo1", "telefono1", "miclave"),
-    new Usuario("pedro", "cedres", "Nick", "correo1", "telefono1", "miclave"),
-    new Usuario("carlos", "cedres", "Nick", "correo1", "telefono1", "miclave"),
-  ];
+  persona:Usuario[] = [];
 
   agregarUsuario(){
     let miUsuario= new Usuario(this.cuadroNombre, this.cuadroApellidos,this.cuadroNick, this.cuadroCorreo, this.cuadroTelefono, this.cuadroClave)
     this.persona.push(miUsuario);
   }
+  
 
   cuadroNombre:string=""
   cuadroApellidos:string="";;
@@ -39,9 +32,6 @@ export class LoginComponent {
   cuadroCorreo:string="";
   cuadroTelefono:string="";
   cuadroClave:string="";
-
-
-
 
 /*
   guardarpersona(auxiliar:String){

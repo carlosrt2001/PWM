@@ -1,0 +1,158 @@
+
+#seccion_cesta{
+    padding: 4rem;
+    padding-top: 2rem;
+}
+
+#header_cesta{
+    justify-content: center;
+    display: flex;
+    font-size: xx-large;
+    padding-bottom: 4rem;
+}
+
+    /* -------------Comienzo de los articulos de la cesta-------------*/
+
+.cesta{
+    height: 8rem;
+    padding-left: 2rem;
+    width: 45rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.cesta a{
+    padding-top: 3rem;
+    font-size: xx-large;
+}
+
+
+.cesta a:hover{
+    cursor: pointer;
+    color: red;
+
+}
+
+.producto{
+    display: flex;
+}
+
+.producto img{
+    object-fit: fill;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    width: 10rem;
+    height: 6rem;
+}
+
+.producto h5{
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+    font-size: medium;
+}
+
+.producto form{
+    padding-top: 4rem;
+    padding-left: 2rem;
+    font-size: medium;
+}
+
+    /* -------------Finalizacion de los articulos de la cesta-------------*/
+
+
+    /* -------------Comienzo del resumen del pago-------------*/
+
+
+#resumen_pago{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(205, 203, 203, 0.543);
+    width: 25rem;
+    height: 25rem;
+    align-items: center;
+}
+
+#resumen_pago h4{
+    padding-top: 1rem;
+    font-size: x-large;
+    margin: 10px;
+}
+
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contenedor_articulos{
+    display: flex;
+    flex-direction: column;
+}
+
+#cupon{
+    resize: none;   
+}
+
+#boton_validar{
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    border: 1px solid black;
+    background-color: rgb(184, 184, 184);
+}
+
+#validar_cupon{
+    display: flex; 
+}
+
+#subtotal{
+    height: 5rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.auxiliar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+}
+
+.auxiliar h6{
+    font-size: medium;
+    padding: 5px;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+#precio, #envio{
+    padding-left: 1rem;
+}
+
+#total{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+#total h6{
+    font-size: medium;
+    font-weight: lighter;
+    margin: 2px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+#pagar{
+    border: 1px solid black;
+    background-color: rgb(184, 184, 184);
+    height: 2rem;
+    width: 15rem;
+}
+    /* -------------Finalizacion del resumen del pago-------------*/

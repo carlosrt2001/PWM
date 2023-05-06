@@ -8,7 +8,7 @@
                 <button class="apple sign-in"><i class="uil uil-apple"></i> Iniciar Sesion con Apple</button>
 
                 <div id="contenedor_interior">
-                    <input type="text" id="username" class="input_login" name="username" placeholder="Nombre de usuario"  [(ngModel)]="cuadroNombre">
+                    <input type="email" id="email" class="input_login" name="email" placeholder="Email"  [(ngModel)]="cuadroNombre">
                     <input type="password" id="password" class="input_login" name="password" placeholder="Contraseña"  [(ngModel)]="cuadroClave">
                     <input type="submit" class="boton_login" value="Iniciar Sesión" (click)="agregarUsuario()">
                     <p class="mensaje">¿Olvido su contraseña?</p>

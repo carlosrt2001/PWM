@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Usuario } from './usuario.model';
-//import { UsuarioServices } from './usuario.services';
 
 
 @Component({
@@ -11,16 +9,4 @@ import { Usuario } from './usuario.model';
 export class AppComponent {
   title = 'ProyectoAngular de Diego Cedres';
 
-
-  /*
-  constructor(private usuarioServices: UsuarioServices){
-
-  }
-
-  */
-
-
-
- 
-  
 }

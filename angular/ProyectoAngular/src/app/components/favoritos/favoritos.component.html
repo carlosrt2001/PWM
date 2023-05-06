@@ -1,6 +1,11 @@
-<div class="section_shop_right">
-    <h4 id="favoritos">Tu lista de favoritos</h4>
-    <div class="container-fluid align-items-center">
-        <div class="row product-container" id="product-container"></div>
-    </div>
+
+<div class="places">
+  <div class="place" *ngFor="let aux of snk">
+      <!--
+        <div class="image" [ngStyle]="{ backgroundImage: 'url('+aux.image+')' }"></div>
+      -->
+      <div class="info">
+          <h4>{{aux.name}}</h4>
+      </div>
+  </div>
 </div>
