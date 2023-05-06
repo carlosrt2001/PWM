@@ -4,12 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { DataServices } from './data.services';
 import { UsuarioServices } from './usuario.services';
+import { FireService } from './fire.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CestaComponent } from './components/cesta/cesta.component';
-
-
 
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -33,6 +32,7 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { ContenedorPerfilComponent } from './components/contenedor-perfil/contenedor-perfil.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ContenedorComponent } from './components/contenedor/contenedor.component';
+
 
 
 const appRoutes:Routes=[
@@ -81,7 +81,7 @@ const appRoutes:Routes=[
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],
-  providers: [DataServices, UsuarioServices],
+  providers: [DataServices, UsuarioServices, FireService],
   bootstrap: [AppComponent]
 
 })
