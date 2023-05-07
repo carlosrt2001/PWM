@@ -1,6 +1,6 @@
 .general{
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
 }
 
 .product_card {
@@ -53,4 +53,13 @@
 #sneaker_name{
     margin: 0px;
     padding: 0px;
+}
+
+#favoritos{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
