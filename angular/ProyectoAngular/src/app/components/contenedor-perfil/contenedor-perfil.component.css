@@ -1,5 +1,4 @@
 
-
 #contenedor_derecha{
     display: flex;
     flex-flow: column wrap;
@@ -36,4 +35,35 @@
 
 #contenedor_interior{
     padding: 2rem 0rem;
+}
+
+
+
+
+@media (max-width: 991.98px){
+    #contenedor_general_perfil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #contenedor{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #contenedor_informacion{
+        display: flex;
+        justify-content: center;
+        margin: 0px;  
+
+    }
+
 }

@@ -45,3 +45,54 @@
     width: 8rem;
     margin: 0.5rem 1rem;
 }
+
+
+
+
+
+
+@media (max-width: 1300px){
+
+    #contenedor_general_perfil{
+        -webkit-transform:scale(0.8);
+        transform:scale(0.8);
+    }
+
+
+}
+
+
+
+@media (max-width: 991.98px){
+    #contenedor_general_perfil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #contenedor{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+    #contenedor_derecha{
+        display: flex;
+        justify-content: center;
+        -webkit-transform:scale(0.75);
+        transform:scale(0.75);
+    }
+}

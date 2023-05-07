@@ -3,6 +3,7 @@ import { collectionData, Firestore } from '@angular/fire/firestore';
 import { collection } from 'firebase/firestore';
 import { Observable } from 'rxjs';
 import { Snk } from './app';
+import { doc } from 'firebase/firestore';
 
 @Injectable({
   providedIn: 'root'

@@ -1,6 +1,7 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { Snk } from 'src/app/app';
 import { FireService } from 'src/app/fire.service';
+import { doc } from 'firebase/firestore';
 
 @Component({
   selector: 'app-favoritos',
@@ -37,6 +38,7 @@ export class FavoritosComponent implements OnInit {
       console.log(items);
       this.snk = items
     });
-    
   }
+
+  
 }

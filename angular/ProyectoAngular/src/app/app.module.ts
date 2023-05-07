@@ -31,7 +31,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { ContenedorPerfilComponent } from './components/contenedor-perfil/contenedor-perfil.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { ContenedorComponent } from './components/contenedor/contenedor.component';
+import { ProductoComponent } from './components/producto/producto.component';
+import { FiltrosComponent } from './components/filtros/filtros.component';
+
+
 
 
 
@@ -44,11 +47,11 @@ const appRoutes:Routes=[
   {path:'hombre', component:HombreComponent},
   {path:'mujer', component:MujerComponent},
   {path:'login', component:LoginComponent},
-  {path:'app-contenedor', component:ContenedorComponent},
   {path:'app-favoritos', component:FavoritosComponent},
   {path:'app-registrar', component:RegistrarComponent},
   {path:'app-perfil', component:PerfilComponent},
-  {path:'app-cesta', component:CestaComponent}
+  {path:'app-cesta', component:CestaComponent},
+  {path:'app-producto', component:ProductoComponent}
 
 ]
 
@@ -64,12 +67,13 @@ const appRoutes:Routes=[
     MujerComponent,
     FooterComponent,
     LoginComponent,
-    ContenedorComponent,
     RegistrarComponent,
     PerfilComponent,
     FavoritosComponent,
     ContenedorPerfilComponent,
-    CestaComponent
+    CestaComponent,
+    ProductoComponent,
+    FiltrosComponent
 
 
   ],
